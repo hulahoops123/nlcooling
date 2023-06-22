@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.1",
+    "@vueuse/motion": "^2.0.0",
     "@vueuse/nuxt": "^10.1.2"
   }
 }

@@ -1274,7 +1274,7 @@
   resolved "https://registry.npmjs.org/@vue/shared/-/shared-3.3.4.tgz"
   integrity sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==
 
-"@vueuse/core@10.1.2":
+"@vueuse/core@10.1.2", "@vueuse/core@^10.1.2":
   version "10.1.2"
   resolved "https://registry.npmjs.org/@vueuse/core/-/core-10.1.2.tgz"
   integrity sha512-roNn8WuerI56A5uiTyF/TEYX0Y+VKlhZAF94unUfdhbDUI+NfwQMn4FUnUscIRUhv3344qvAghopU4bzLPNFlA==
@@ -1289,6 +1289,20 @@
   resolved "https://registry.npmjs.org/@vueuse/metadata/-/metadata-10.1.2.tgz"
   integrity sha512-3mc5BqN9aU2SqBeBuWE7ne4OtXHoHKggNgxZR2K+zIW4YLsy6xoZ4/9vErQs6tvoKDX6QAqm3lvsrv0mczAwIQ==
 
+"@vueuse/motion@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/motion/-/motion-2.0.0.tgz#5c4fdb2857d179c899607ac9b6853ccc5c541901"
+  integrity sha512-V3TAlbt1OPmb9DZFoFCz9WC3Oue54t9VHlavSWm+VU1JNimYcd+pc6aGR/hgaHUAU9tOPRHoDTleSrv2zrdIsw==
+  dependencies:
+    "@vueuse/core" "^10.1.2"
+    "@vueuse/shared" "^10.1.2"
+    csstype "^3.1.2"
+    framesync "^6.1.2"
+    popmotion "^11.0.5"
+    style-value-types "^5.1.2"
+  optionalDependencies:
+    "@nuxt/kit" "^3.5.1"
+
 "@vueuse/nuxt@^10.1.2":
   version "10.1.2"
   resolved "https://registry.npmjs.org/@vueuse/nuxt/-/nuxt-10.1.2.tgz"
@@ -1301,7 +1315,7 @@
     nuxt "^3.4.3"
     vue-demi ">=0.14.0"
 
-"@vueuse/shared@10.1.2":
+"@vueuse/shared@10.1.2", "@vueuse/shared@^10.1.2":
   version "10.1.2"
   resolved "https://registry.npmjs.org/@vueuse/shared/-/shared-10.1.2.tgz"
   integrity sha512-1uoUTPBlgyscK9v6ScGeVYDDzlPSFXBlxuK7SfrDGyUTBiznb3mNceqhwvZHjtDRELZEN79V5uWPTF1VDV8svA==
@@ -2256,7 +2270,7 @@ csso@^5.0.5:
   dependencies:
     css-tree "~2.2.0"
 
-csstype@^3.1.1:
+csstype@^3.1.1, csstype@^3.1.2:
   version "3.1.2"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
@@ -2816,6 +2830,13 @@ fraction.js@^4.2.0:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
+framesync@6.1.2, framesync@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/framesync/-/framesync-6.1.2.tgz#755eff2fb5b8f3b4d2b266dd18121b300aefea27"
+  integrity sha512-jBTqhX6KaQVDyus8muwZbBeGGP0XgujBRbQ7gM7BRdS3CadCZIHiawyzYLnafYcvZIh5j8WE7cxZKFn7dXhu9g==
+  dependencies:
+    tslib "2.4.0"
+
 fresh@0.5.2, fresh@~0.5.2:
   version "0.5.2"
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
@@ -3167,6 +3188,11 @@ hash-sum@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/hash-sum/-/hash-sum-2.0.0.tgz"
   integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
+
+hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
+  integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
 hookable@^5.5.3:
   version "5.5.3"
@@ -4907,6 +4933,16 @@ pkg-types@^1.0.2, pkg-types@^1.0.3:
     mlly "^1.2.0"
     pathe "^1.1.0"
 
+popmotion@^11.0.5:
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-11.0.5.tgz#8e3e014421a0ffa30ecd722564fd2558954e1f7d"
+  integrity sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==
+  dependencies:
+    framesync "6.1.2"
+    hey-listen "^1.0.8"
+    style-value-types "5.1.2"
+    tslib "2.4.0"
+
 portfinder@^1.0.26:
   version "1.0.32"
   resolved "https://registry.npmjs.org/portfinder/-/portfinder-1.0.32.tgz"
@@ -5887,6 +5923,14 @@ strip-literal@^1.0.1:
   dependencies:
     acorn "^8.8.2"
 
+style-value-types@5.1.2, style-value-types@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-5.1.2.tgz#6be66b237bd546048a764883528072ed95713b62"
+  integrity sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "2.4.0"
+
 stylehacks@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/stylehacks/-/stylehacks-6.0.0.tgz"
@@ -6107,6 +6151,11 @@ ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
+
+tslib@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tslib@^2.0.1, tslib@^2.1.0:
   version "2.5.3"

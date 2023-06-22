@@ -9,12 +9,12 @@ module.exports = {
       },
       keyframes: {
         flap: {
-          '0%': { transform: 'rotateX(-50deg)' },
+          '0%': { transform: 'rotateX(0deg)' },
           '100%': { transform: 'rotateX(50deg)' },
         },
       },
       animation: {
-        flap: 'flap 5s ease-in-out alternate infinite',
+        flap: 'flap 2s ease-in-out alternate infinite',
       }
     },
   },
