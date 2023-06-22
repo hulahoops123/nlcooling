@@ -1,17 +1,27 @@
 <template>
-    <div ref="mainContainerElement" class="w-full h-screen overflow-y-scroll overflow-x-clip bg-sky-900">
+    <div ref="mainContainerElement" class="w-full h-screen overflow-y-scroll overflow-x-clip bg-blue-900">
 
         <Head>
             <Title>NLCooling Durban</Title>
         </Head>
-        <div name="mainImageContainer2"
-            class="absolute h-full bg-tranparent w-full overflow-clip pointer-events-none opacity-30 z-0">
+        <!-- <div name="mainImageContainer2"
+            class="absolute h-full bg-tranparent w-full overflow-clip pointer-events-none opacity-20 z-0">
             <img src="../assets/aclg.png" class="object-cover h-full w-full z-0 "
                 alt="">
-        </div>
-        <div name="mainImageContainer"
+        </div> -->
+                <!-- <div name="mainImageContainer2"
+            class="absolute h-full bg-tranparent w-full overflow-clip pointer-events-none opacity-30 z-0">
+            <img src="../assets/nllogo3.png" class="object-cover h-96 w-96 z-0 "
+                alt="">
+        </div> -->
+        <!-- <div name="mainImageContainer"
             class="absolute h-full bg-tranparent w-full overflow-clip pointer-events-none opacity-40 z-0">
             <img src="../assets/logo_large.png" class="object-contain h-4/5 -translate-x-1/3 translate-y-44 z-0 "
+                alt="">
+        </div> -->
+                <div name="mainImageContainer"
+            class="absolute h-full bg-tranparent w-full overflow-clip pointer-events-none opacity-20 z-0">
+            <img src="../assets/nllogo3.png" class="object-contain h-4/5 -translate-x-1/3 translate-y-44 z-0 "
                 alt="">
         </div>
 
@@ -72,13 +82,14 @@
         </div>
 
         <div id="topMainDiv" class="flex w-full flex-col h-screen font-staatliches items-center">
-            <div name="top-name-and-logo" class="flex items-center w-full py-4 justify-center bg-gray-800/50 ">
-                <img src="../assets/logo_large.png" class="w-8 h-8 mr-2 rounded-full bg-blend-saturation bg-gray-400/10 "
-                    alt="">
-                <img src="../assets/nllogo.png" class="h-12 opacity-95" alt="">
+            <div name="top-name-and-logo" class="flex items-center w-full py-4 justify-center bg-sky-950 z-50">
+                <!-- <img src="../assets/nllogo3.png" class="w-12 h-12 mr-2 rounded-full bg-blend-saturation" alt=""> -->
+                <img src="../assets/nllogo2.png" class="w-12 h-12 mr-2 rounded-full bg-blend-saturation" alt="">
+                    <p class="font-staatliches tracking-wider text-neutral-100 text-5xl">COOLING</p>
+                <!-- <img src="../assets/nllogo.png" class="h-12 opacity-95" alt=""> -->
             </div>
             <p name="headline" class="font-staatliches text-6xl px-4 text-neutral-200 mt-12 z-20 ">
-                aircon specialists
+                air-conditioning and refrigeration
             </p>
             <p name="tagline" class="font-raleway text-2xl px-4 text-neutral-200 mt-4 flex grow z-20 ">
                 Durbans finest air-conditioning and refrigerator specialists
@@ -124,7 +135,7 @@
                     <p v-motion :initial="{ opacity: 0, scale: 0.8 }"
                         :visible="{ opacity: 1, y: 0, scale: 1, transition: { duration: 1000, delay: 100, } }"><span
                             class="font-semibold">Maintenance</span>
-                        and repairs to any airconditioning units</p>
+                        and repairs to commercial and domestic airconditioning units</p>
                 </div>
                 <div class="flex w-full justify-center px-4 gap-4 items-center text-2xl flex-col md:flex-row md:justify-start md:px-40">
                     <img v-motion :initial="{ opacity: 0, scale: 1.75 }"
@@ -149,7 +160,7 @@
                 <p v-motion :initial="{ opacity: 0, scale: 0.8 }"
                         :visible="{ opacity: 1, y: 0, scale: 1, transition: { duration: 1000, delay: 300, } }"
                 class="w-full px-4 text-2xl bg-sky-900 text-neutral-200 py-4 md:flex-row md:px-40 md:justify-start">
-                    With hundreds of happy clients and succesful installations, <em>NLCooling </em> is your solution to any airconditioner and refrigerator needs in and around Durban.<br><br> <span class="underline" @click="ctaClicked" >Contact</span> us now.
+                    With thousands of happy clients and succesful installations, <em>NLCooling </em> is your solution to any airconditioner and refrigerator needs in and around Durban.<br><br> <span class="underline" @click="ctaClicked" >Contact</span> us now.
                 </p>
             </div>
             <div class="flex justify-center z-50 bg-black opacity-100">
